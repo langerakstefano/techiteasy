@@ -11,13 +11,22 @@
 
 
 // Opdracht 1A
-// const allTvNames = inventory.filter ( (inventor) => {
-//     console.log(inventor.name)
-// })
+const allTvNames = inventory.filter((inventor) => {
+    console.log(inventor.name)
+})
 
 // Opdracht 1B
-// const TvsSoldout = inventory.filter ( (inventor) => {
-//     return inventor.originalStock === inventor.sold;
-// })
-// console.log(TvsSoldout)
+const TvsSoldout = inventory.filter((inventor) => {
+    return inventor.originalStock === inventor.sold;
+})
+console.log(TvsSoldout)
 
+//Opdracht 1C
+const AmbiTV = inventory.filter((inventor) => {
+    return inventor.options.ambiLight === true;
+})
+console.log(AmbiTV);
+
+//Opdracht 1D
+inventory.sort((a, b) => (b.price - a.price));
+console.log(inventory);
